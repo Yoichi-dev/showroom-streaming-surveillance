@@ -3,7 +3,7 @@
     <div class="row">
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <h1 class="display-6">配信日記</h1>
-        <p class="lead">配信内容を記録を保存することができます</p>
+        <p class="lead">配信内容の記録を保存することができます</p>
       </div>
     </div>
     <div class="row col-12 col-md-10 col-lg-6 mx-auto">
@@ -448,7 +448,10 @@ export default {
       this.btnDisabled = true
 
       axios
-        .get('http://192.168.11.2:3001/apis/live_info/' + replaceRoomId)
+        .get(
+          'https://niconico-showroom-api.herokuapp.com/apis/live_info/' +
+            replaceRoomId
+        )
         .then((response) => {
           if (response.data.room_name === undefined) {
             alert('ページが存在しません')
@@ -572,7 +575,10 @@ export default {
     getStreamKey() {
       this.loadingKey = true
       axios
-        .get('http://192.168.11.2:3001/apis/live_info/' + this.roomId)
+        .get(
+          'https://niconico-showroom-api.herokuapp.com/apis/live_info/' +
+            this.roomId
+        )
         .then((response) => {
           if (response.data != '') {
             if (response.data.bcsvr_key != '') {
@@ -667,7 +673,7 @@ export default {
         comment: this.commentList,
         count: this.countList,
         free: this.freeGiftList,
-        pre: this.preGiftData,
+        pre: this.preGiftList,
       }
       this.$store.commit('setHistory', history)
       this.start = null
