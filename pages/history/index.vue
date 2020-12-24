@@ -36,6 +36,9 @@
       </table>
     </div>
     <div class="mt-5 row col-12 mx-auto">
+      無料ギフトの判定が若干甘いので注意
+    </div>
+    <div class="mt-5 row col-12 mx-auto">
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
           <a
