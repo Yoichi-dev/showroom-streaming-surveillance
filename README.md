@@ -1,6 +1,20 @@
-# showroom-streaming-surveillance
+# Showroom Streaming Surveillance
 
-## Build Setup
+[SHOWROOM](https://www.showroom-live.com/)配信中のリスナーのコメント、ギフトの履歴を保存しておくことができるWebアプリケーションになります
+
+# DEMO
+
+[Demo PageDemo Page](https://showroom-streaming-surveillance.yoichi.dev/)
+
+# Requirement
+
+- @nuxtjs/axios 5.12.2
+- @nuxtjs/dotenv 1.4.1
+- @nuxtjs/pwa 3.0.2
+- moment 2.29.1
+- vuex-persistedstate 4.0.0-beta.1
+
+# Installation
 
 ```bash
 # install dependencies
@@ -17,4 +31,18 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+# Usage
+
+```bash
+$ git clone https://github.com/Yoichi-dev/showroom-streaming-surveillance.git
+$ cd showroom-streaming-surveillance
+$ npm run dev
+```
+
+# Author
+
+* よーいちろー [@PianoPc](https://twitter.com/PianoPc)
+
+# License
+
+[MIT license](https://en.wikipedia.org/wiki/MIT_License).
